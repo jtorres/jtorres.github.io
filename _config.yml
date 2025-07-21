@@ -1,0 +1,58 @@
+# Site settings
+title: "Engineering with C#"
+description: "josemiguel's personal blog."
+lang: en-US
+author:
+  name: "josemiguel.torres"
+  github: jtorres
+  # Add more social links as needed, e.g., twitter, linkedin
+
+# URL configuration
+url: "https://jtorres.github.io" # Update with your actual GitHub username
+baseurl: "" # No subpath for standard user/organization site
+
+# Theme - use a popular and clean Jekyll theme for technical blogs
+theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (supported by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# C# Syntax Highlighting Support
+kramdown:
+  syntax_highlighter: rouge
+
+# Pagination (optional)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Exclude files/folders from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# SEO and Social Sharing
+seo:
+  type: Blog
+  twitter_card: summary
+
+# Defaults for blog posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+
+# RSS/Atom Feed configuration
+feed:
+  path: atom.xml
